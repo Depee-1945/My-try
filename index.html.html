@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A simple educational website introducing the solar system and its planets.">
+    <title>Exploring Our Solar System</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            color: #243044;
+            background-color: #f3f6fb;
+        }
+
+        header {
+            padding: 32px 20px;
+            text-align: center;
+            color: white;
+            background: #142b50;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+            font-size: 2.2rem;
+        }
+
+        nav a {
+            display: inline-block;
+            margin: 8px 10px 0;
+            color: #ffffff;
+            font-weight: bold;
+        }
+
+        main {
+            width: min(1000px, 92%);
+            margin: 28px auto;
+        }
+
+        section {
+            margin-bottom: 28px;
+            padding: 24px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(20, 43, 80, 0.08);
+        }
+
+        h2 {
+            color: #174a83;
+        }
+
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            padding-top: 8px;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: #075ca8;
+        }
+
+        a:focus {
+            outline: 3px solid #f2b544;
+            outline-offset: 3px;
+        }
+
+        footer {
+            padding: 18px;
+            text-align: center;
+            color: white;
+            background: #142b50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Exploring Our Solar System</h1>
+        <p>A simple guide to the Sun, planets and space</p>
+        <nav aria-label="Main navigation">
+            <a href="#introduction">Introduction</a>
+            <a href="#planets">The Planets</a>
+            <a href="#gallery">Image Gallery</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="introduction">
+            <h2>What Is the Solar System?</h2>
+            <p>
+                The solar system is made up of the Sun and all the objects that move
+                around it. These objects include eight planets, their moons, dwarf
+                planets, asteroids and comets. The Sun is at the centre of our solar
+                system and provides the light and heat that make life on Earth possible.
+            </p>
+        </section>
+
+        <section id="planets">
+            <h2>The Eight Planets</h2>
+            <p>The eight planets travel around the Sun in their own orbits. They are:</p>
+            <ul>
+                <li>Mercury – the closest planet to the Sun.</li>
+                <li>Venus – the hottest planet in the solar system.</li>
+                <li>Earth – the planet where we live.</li>
+                <li>Mars – known as the Red Planet.</li>
+                <li>Jupiter – the largest planet in the solar system.</li>
+                <li>Saturn – famous for its beautiful rings.</li>
+                <li>Uranus – a very cold planet that rotates on its side.</li>
+                <li>Neptune – a distant, cold and windy planet.</li>
+            </ul>
+        </section>
+
+        <section id="gallery">
+            <h2>Discover Space Through Images</h2>
+            <div class="image-gallery">
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                        alt="Planet Earth viewed from space with its blue oceans and clouds">
+                    <figcaption>Earth, our home planet, viewed from space.</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                        alt="A view of Earth from space showing the planet and its atmosphere">
+                    <figcaption>Our planet is part of a vast universe.</figcaption>
+                </figure>
+
+                <figure>
+                    <img
+                        src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+                        alt="Colourful stars and nebula clouds in deep outer space">
+                    <figcaption>The universe contains stars, galaxies and nebulae.</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="learn-more">
+            <h2>Learn More About Space</h2>
+            <p>
+                Would you like to discover more about planets, moons and space
+                exploration? Visit the
+                <a href="https://science.nasa.gov/solar-system/" target="_blank" rel="noopener noreferrer">
+                    NASA Solar System website
+                </a>
+                for more information.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created as an HTML5 learning project.</p>
+    </footer>
+</body>
+</html>
